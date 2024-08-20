@@ -1,0 +1,145 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 98%);
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 75px 15px;
+}
+
+/* HEADER */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1100px;
+}
+.header{
+    max-width: 550px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 75px;
+}
+
+.header p{
+    color:hsl(229, 6%, 66%);
+    text-align: center;
+  
+}
+h1 span, .card-title{
+    color: hsl(234, 12%, 34%);
+}
+h1 span:nth-child(1){
+    font-weight: 200;
+    font-style: normal;
+}
+.main-headline{
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+}
+
+/* ITEMS */
+.item-container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 100%;
+}
+.card{
+    max-width: 300px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    box-shadow: 0px 6px 10px hsl(234, 12%, 34%);
+    margin-bottom: 2%;
+}
+
+.item-image{
+    width: 60px;
+    height: 60px;
+    float: right;
+    clear: both;
+    margin-top: 15%;
+}
+
+.card-text{
+    color:hsl(229, 6%, 66%);
+    text-align: left;
+}
+
+.card-supervisor{
+    border-top: 7px solid hsl(180, 62%, 55%);
+}
+.card-team{
+    border-top: 7px solid hsl(0, 78%, 62%);
+}
+.card-karma{
+    border-top: 7px solid hsl(34, 97%, 64%);
+   
+}
+.card-calculator{
+    border-top: 7px solid hsl(212, 86%, 64%);
+}
+
+/* FOOTER */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    visibility: hidden;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Small Devicec */
+@media(max-width: 767px){
+    body{
+        margin-top: 10%;
+    }
+    /* HEADER */
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headline{
+        margin-bottom: 5%;
+    }
+    .header{
+        max-width: 400px;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 15%;
+    }
+    h1 span:nth-child(1), .main-headline{
+        font-size: 1.6rem;
+    }
+
+    /* ITEMS */
+    .item-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media(min-width:940px){
+    .card-supervisor, .card-karma{
+        transform: translateY(50%);
+    }
+
+    .body{
+        padding: 0px;
+    }
+}
